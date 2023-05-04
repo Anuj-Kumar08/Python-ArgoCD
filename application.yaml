@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/Anuj-Kumar08/Python-ArgoCD.git
     targetRevision: HEAD
-    path: kubernetes
+    path: dev
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp

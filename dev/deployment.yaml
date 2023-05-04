@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-  name: example-deploy  
+  name: myapp
   labels:
-    app: example-app 
+    app: myapp
 spec:
   selector:
     matchLabels:
-      app: example-app
+      app: myapp
   replicas: 2
   strategy:
     type: RollingUpdate
@@ -17,10 +17,10 @@ spec:
   template:
     metadata:
       labels:
-        app: example-app
+        app: myapp
     spec:
       containers:
-        - name: example-app
+        - name: myapp
           image: aimvector/python:1.0.0
           imagePullPolicy: Always
           ports:
