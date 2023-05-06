@@ -22,7 +22,7 @@ def wrapper():
                             }
             </script>
             <form method="POST" action="/upload" class="inline" enctype="multipart/form-data">
-                <p align="center"><button class=grey style="background-color:yellow;box-shadow: 0 0 5px 0;backdrop-filter:blur(10px);height:150px;width:700px"><h1>K-DATA-ANALYZER</h1></button></a></p>
+                <p align="center"><button class=grey style="background-color:yellow;box-shadow: 0 0 5px 0;backdrop-filter:blur(10px);height:150px;width:700px"><h1><i>ArgoCD Demo<i></h1></button></a></p>
             </form>
         </body>
     """
