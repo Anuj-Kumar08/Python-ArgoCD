@@ -6,7 +6,11 @@ spec:
   selector:
     matchLabels:
       app: myapp
+<<<<<<< HEAD
   replicas: 3
+=======
+  replicas: 4
+>>>>>>> 452a99e03d2ce8b980df0930e56f977c0fc3e64b
   strategy:
     type: RollingUpdate
     rollingUpdate:
