@@ -1,16 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-  name: myapp-deployment
+  name: myapp
+  labels:
+    app: myapp
 spec:
   selector:
     matchLabels:
       app: myapp
-<<<<<<< HEAD
-  replicas: 3
-=======
-  replicas: 4
->>>>>>> 452a99e03d2ce8b980df0930e56f977c0fc3e64b
+  replicas: 2
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -34,5 +32,3 @@ spec:
             limits:
               memory: "64Mi"
               cpu: "500m"
-
-                    
